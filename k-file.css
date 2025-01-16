@@ -10,3 +10,5 @@ table td {border: 3px solid #283d54;; text-align: center; padding: 5px;}
 .c {width: 18%;}
 .p {font-weight: bold; color: #283d54;}
 .z {width: 33%;}
+a {text-decoration: none; color: inherit;}
+#zero {background-image: url(https://colmagzhan.kz/public/sova_sko_km/files/2018/10/22/221018_140556_img20180918161605.jpg); background-size: cover; background-position: 0 10%;}
