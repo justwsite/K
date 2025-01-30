@@ -22,7 +22,8 @@ function funct() {
     
     this.textContent = count + " / " + all;
     if(count == all) {
-        this.style.background = "#75AA9A";
+        this.style.background = "#0C372A";
+        this.style.color = "white";
     }
 }
 
