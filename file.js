@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const r = document.querySelectorAll('#r td');
     r.forEach(w => {
         if (w.textContent.trim().includes("/")) {
-            w.style.color = "#283d54";
-            w.style.fontWeight = "bold";
+            w.style.background = "#7990AA";
         }
     });
 });
