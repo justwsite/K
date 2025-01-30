@@ -21,6 +21,10 @@ function funct() {
     }
     
     this.textContent = count + " / " + all;
+    var z = all + " / " + all;
+    if(this.textContent = z) {
+        this.background = "#75AA9A";
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
