@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
             funct.call(row);
         }
     });
+    const r = document.querySelectorAll('#r td');
+    r.forEach(w => {
+        if (w.textContent.trim().includes("/")) {
+            w.style.color = "#283d54";
+            w.style.fontWeight = "bold";
+        }
+    });
 });
 
 function funct() {
