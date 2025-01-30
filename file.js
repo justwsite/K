@@ -22,7 +22,7 @@ function funct() {
     
     this.textContent = count + " / " + all;
     if(count == all) {
-        this.bgcolor = "#75AA9A";
+        this.background = "#75AA9A";
     }
 }
 
