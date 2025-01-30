@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     const r = document.querySelectorAll('#r td');
     r.forEach(w => {
-        if (w.textContent.trim().includes("/")) {
+        if (w.textContent.trim().includes("/") && w.textContent != "Время / Дата") {
 		w.style.fontWeight = "bold";
 		w.style.fontStyle = "italic";
         }
