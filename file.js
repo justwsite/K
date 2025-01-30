@@ -21,8 +21,7 @@ function funct() {
     }
     
     this.textContent = count + " / " + all;
-    var z = all + " / " + all;
-    if(this.textContent = z) {
+    if(count == all) {
         this.bgcolor = "#75AA9A";
     }
 }
