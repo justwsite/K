@@ -20,8 +20,7 @@ function funct() {
             }
         }
     }
-    
-    this.textContent = count + " / " + all;
+	this.textContent = count + " / " + all;
 }
 
 document.addEventListener('DOMContentLoaded', function () {
