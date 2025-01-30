@@ -1,4 +1,5 @@
-document.addEventListener('DOMContentLoaded', function () {
+				
+#255546document.addEventListener('DOMContentLoaded', function () {
     const rows = document.querySelectorAll('#second td');
     rows.forEach(row => {
         if (row.dataset.word) {
@@ -22,8 +23,7 @@ function funct() {
     
     this.textContent = count + " / " + all;
     if(count == all) {
-        this.style.background = "#255546";
-        this.style.color = "white";
+        this.style.color = "#255546";
     }
 }
 
