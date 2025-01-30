@@ -21,7 +21,8 @@ function funct() {
     }
 	this.textContent = count + " / " + all;
 	if(count == all) {
-		this.style.color = "#255546";
+		this.style.background = "#255546";
+		this.style.color = "white";
 	}
 }
 
