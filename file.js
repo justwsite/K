@@ -42,18 +42,19 @@ function t(a, b) {
     const x = document.getElementById(a);
     const y = document.querySelectorAll(b);
     let s2 = 0;
+    let s1 = 0;
+    let s = 0;
     y.forEach(z => {
         const txt = z.textContent;
         const n = parseInt(txt.split('/')[0]);
         const m = parseInt(txt.split('/')[1]);
+        if(!isNaN(n)) {
+            s1+=n;
+        }
         if(!isNaN(m)) {
             s2+=m;
         }
-	let s1 = s2;
-	if(!isNaN(n)) {
-            s1-=n;
-        }
     });
-	
-    x.textContent = s1 + " / " + s2;
+    s = s2-s1;
+    x.textContent = s + " / " + s2;
 }
