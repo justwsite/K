@@ -61,13 +61,13 @@ function t(a, b) {
 }
 
 function zzz(x, a, b, c) {
-    const w = document.querySelectorAll(x);
+    const w = document.getElementById(x);
     const z0 = document.getElementById(a);
-    const z1 = document.querySelectorAll(b);
-    const z2 = document.querySelectorAll(c);
+    const z1 = document.getElementById(b);
+    const z2 = document.getElementById(c);
 	let i = parseInt(z0.split('/')[0]);
 	let f = parseInt(z1.split('/')[0]) + parseInt(z2.split('/')[0]);
 	i = i+(f/2);
 	let all = parseInt(z0.split('/')[1]) + parseInt(z2.split('/')[1]);
-	w.textContent = i + " / " + all;
+	w.textContent += i + " / " + all;
 }
