@@ -8,10 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const r = document.querySelectorAll('#r td');
     r.forEach(w => {
         if (w.textContent.trim().includes("/") && w.textContent != "Время / Дата") {
-		w.style.fontWeight = "bold";
-		w.style.fontStyle = "italic";
+            w.style.fontWeight = "bold";
+            w.style.fontStyle = "italic";
         }
     });
+    t('z0', '.l');
+    t('z1', '.p1');
+    t('z2', '.p2');
+    zzz('w', 'z0', 'z1', 'z2')
 });
 
 function funct() {
@@ -31,13 +35,6 @@ function funct() {
 		this.style.background = "#61AA94";
 	}
 }
-
-document.addEventListener('DOMContentLoaded', function () {
-    t('z0', '.l');
-    t('z1', '.p1');
-    t('z2', '.p2');
-    zzz('w', 'z0', 'z1', 'z2')
-});
 
 function t(a, b) {
     const x = document.getElementById(a);
@@ -65,9 +62,9 @@ function zzz(x, a, b, c) {
     const z0 = document.getElementById(a);
     const z1 = document.getElementById(b);
     const z2 = document.getElementById(c);
-	let i = parseInt(z0.split('/')[0]);
-	let f = parseInt(z1.split('/')[0]) + parseInt(z2.split('/')[0]);
+	let i = parseInt(z0.textContent.split('/')[0]);
+	let f = parseInt(z1.textContent.split('/')[0]) + parseInt(z2.textContent.split('/')[0]);
 	i = i+(f/2);
-	let all = parseInt(z0.split('/')[1]) + parseInt(z2.split('/')[1]);
+	let all = parseInt(z0.textContent.split('/')[1]) + parseInt(z2.textContent.split('/')[1]);
 	w.textContent = "Осталось пар:" + i + " / " + all;
 }
