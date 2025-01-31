@@ -57,17 +57,4 @@ function t(a, b) {
     });
     s = s2-s1;
     x.textContent = s + " / " + s2;
-    zzz('w', 'z0', 'z1', 'z2');
-}
-
-function zzz(x, a, b, c) {
-    const w = document.querySelectorAll(x);
-    const z0 = document.getElementById(a);
-    const z1 = document.querySelectorAll(b);
-    const z2 = document.querySelectorAll(c);
-	let i = parseInt(z0.split('/')[0]);
-	let f = parseInt(z1.split('/')[0]) + parseInt(z2.split('/')[0]);
-	i = i+(f/2);
-	let all = parseInt(z0.split('/')[1]) + parseInt(z2.split('/')[1]);
-	w.textContent = i + " / " + all;
 }
