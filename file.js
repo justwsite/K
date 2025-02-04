@@ -71,3 +71,7 @@ function zzz(y, x, a, b, c) {
 	i = all - i;
 	v.textContent = "Прошло пар: " + i + " / " + all;
 }
+
+function mf(a) {
+	window.open(a, "_blank");
+};
