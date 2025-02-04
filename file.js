@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     t('z0', '.l');
     t('z1', '.p1');
     t('z2', '.p2');
-    zzz('w', 'z0', 'z1', 'z2')
+    zzz('v', 'w', 'z0', 'z1', 'z2')
 });
 
 function funct() {
@@ -57,7 +57,8 @@ function t(a, b) {
     x.textContent = s + " / " + s2;
 }
 
-function zzz(x, a, b, c) {
+function zzz(y, x, a, b, c) {
+    const v = document.getElementById(y);
     const w = document.getElementById(x);
     const z0 = document.getElementById(a);
     const z1 = document.getElementById(b);
@@ -67,4 +68,6 @@ function zzz(x, a, b, c) {
 	i = i+(f/2);
 	let all = parseInt(z0.textContent.split('/')[1]) + parseInt(z2.textContent.split('/')[1]);
 	w.textContent = "Осталось пар: " + i + " / " + all;
+	i = all - i;
+	v.textContent = "Прошло пар: " + i + " / " + all;
 }
