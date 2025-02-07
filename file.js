@@ -67,9 +67,9 @@ function zzz(y, x, a, b, c) {
 	let f = parseInt(z1.textContent.split('/')[0]) + parseInt(z2.textContent.split('/')[0]);
 	i = i+(f/2);
 	let all = parseInt(z0.textContent.split('/')[1]) + parseInt(z2.textContent.split('/')[1]);
-	w.textContent = "Осталось пар: " + i + " / " + all;
+	w.textContent = "Осталось пар: " + Math.ceil(i) + " / " + all;
 	i = all - i;
-	v.textContent = "Прошло пар: " + i + " / " + all;
+	v.textContent = "Прошло пар: " + Math.floor(i) + " / " + all;
 }
 
 function mf(a) {
