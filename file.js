@@ -4,20 +4,20 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (row.dataset.word) {
             		funct.call(row);
         	}
-    		let txt = row.textContent.trim().normalize();
-		if (txt.startsWith("/")) {
-			console.log("left");
-       			row.style.textAlign = "left";
-    		} else if (txt.endsWith("/")) {
-			console.log("right");
-        		row.style.textAlign = "right";
-    		}
 	});
     const r = document.querySelectorAll('#r td');
     r.forEach(w => {
         if (w.textContent.trim().includes("/") && w.textContent != "Время / Дата") {
             w.style.fontWeight = "bold";
             w.style.fontStyle = "italic";
+		let txt = w.textContent.trim().normalize();
+		
+		if (txt.startsWith("/")) {
+       			row.style.textAlign = "left";
+    		} else if (txt.endsWith("/")) {
+        		row.style.textAlign = "right";
+    		}
+		
         }
     });
     t('z0', '.l');
