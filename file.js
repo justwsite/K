@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     r.forEach(w => {
 	    let txt = w.textContent.trim().normalize();
 		if (txt.startsWith("/")) {
-       			w.style.textAlign = "left";
+       			w.style.textAlign = "right";
     		} else if (txt.endsWith("/")) {
-        		w.style.textAlign = "right";
+        		w.style.textAlign = "left";
     		}
         if (w.textContent.trim().includes("/") && w.textContent != "Время / Дата") {
             w.style.fontWeight = "bold";
