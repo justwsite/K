@@ -4,6 +4,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (row.dataset.word) {
             funct.call(row);
         }
+	if (row.textContent.trim().includes("/")) {
+		if (txt.split('/')[0] = "") {
+			row.style.textAlign = "left";
+		} else if (txt.split('/')[1] = "") {
+			row.style.textAlign = "right";
+		} 
+	}
     });
     const r = document.querySelectorAll('#r td');
     r.forEach(w => {
