@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
             funct.call(row);
         }
 	if (row.textContent.trim().includes("/")) {
-		if (row.textContent.split('/')[0] === "") {
+		if (row.textContent.trim().split('/')[0] === "") {
 			row.style.textAlign = "left";
-		} else if (row.textContent.split('/')[1] === "") {
+		} else if (row.textContent.trim().split('/')[1] === "") {
 			row.style.textAlign = "right";
 		} 
 	}
