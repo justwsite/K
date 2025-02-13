@@ -1,5 +1,4 @@
-body {background: #003bd1; margin: 0; text-align: center;
-font-family: sans-serif;}
+body {background: #003bd1; margin: 0; text-align: center; font-family: sans-serif; min-width: 1200px;}
 #main {background: white; width: 96%; margin: auto auto;}
 table {border-collapse: collapse; width: 96%; margin: auto auto;}
 table td {border: 3px solid #283d54;; text-align: center; padding: 5px;}
