@@ -6,8 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
         	}
     		let txt = row.textContent.trim().normalize();
 		if (txt.startsWith("/")) {
+			console.log("left");
        			row.style.textAlign = "left";
     		} else if (txt.endsWith("/")) {
+			console.log("right");
         		row.style.textAlign = "right";
     		}
 	});
