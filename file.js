@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
     const rows = document.querySelectorAll('#second td');
-    rows.forEach(row => {
-        if (row.dataset.word) {
-            funct.call(row);
-        }
-	if (row.textContent.trim().includes("/")) {
-		if (row.textContent.trim().split('/')[0] === "") {
-			row.style.textAlign = "left";
-		} else if (row.textContent.trim().split('/')[1] === "") {
-			row.style.textAlign = "right";
-		} 
-	}
-    });
+	rows.forEach(row => {
+		if (row.dataset.word) {
+            		funct.call(row);
+        	}
+    		let txt = row.textContent.trim();
+		if (txt.startsWith("/")) {
+       			row.style.textAlign = "left";
+    		} else if (txt.endsWith("/")) {
+        		row.style.textAlign = "right";
+    		}
+	});
     const r = document.querySelectorAll('#r td');
     r.forEach(w => {
         if (w.textContent.trim().includes("/") && w.textContent != "Время / Дата") {
