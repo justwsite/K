@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 		if (row.dataset.word) {
             		funct.call(row);
         	}
-    		let txt = row.textContent.trim();
+    		let txt = row.textContent.trim().normalize();
 		if (txt.startsWith("/")) {
        			row.style.textAlign = "left";
     		} else if (txt.endsWith("/")) {
