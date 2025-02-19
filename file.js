@@ -47,7 +47,6 @@ function t(a, b) {
     const y = document.querySelectorAll(b);
     let s2 = 0;
     let s1 = 0;
-    let s = 0;
     y.forEach(z => {
         const txt = z.textContent;
         const n = parseInt(txt.split('/')[0]);
@@ -59,8 +58,7 @@ function t(a, b) {
             s2+=m;
         }
     });
-    s = s2-s1;
-    x.textContent = s + " / " + s2;
+    x.textContent = s1 + " / " + s2;
 }
 
 function zzz(y, x, a, b, c) {
