@@ -9,3 +9,6 @@ table td {border: 3px solid #283d54;; text-align: center; padding: 5px;}
 a {text-decoration: none; color: inherit;}
 #zero {background-image: url(https://colmagzhan.kz/public/sova_sko_km/files/2018/10/22/221018_140556_img20180918161605.jpg); background-size: cover; background-position: 0 10%;}
 #eighth_march {background-image: url(https://th.bing.com/th/id/R.90c1689ccf46eeb5e122a82888a5ecdf?rik=oXxK%2bAEf5jxt0w&riu=http%3a%2f%2fcp14.nevsepic.com.ua%2f184%2f18388%2fthumbs%2f1385022444-0_27cf2_b2ae5abd_xl.jpeg&ehk=nh0ZGySS4a70B9x55gfANhZ9JODNznn2tJjZyFnS%2few%3d&risl=&pid=ImgRaw&r=0); background-size: cover;}
+@media(min-width: 1440px) {
+#eighth_march {background-image: url(https://sun9-7.userapi.com/impg/v4u7pvba9U2Mzw5YNHgpbnsPu5GzBHrAxcicWw/vXqH0pI2GNY.jpg?size=807x807&quality=96&sign=d6fc3dd5f799db08f36cb57761d17d1a&c_uniq_tag=gOVApBifAoVOvFnD5LQyQuAUmc7ZZKZBasoDTZUIzfI&type=album);}
+}
