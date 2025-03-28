@@ -39,6 +39,8 @@ function funct() {
 	this.textContent = count + " / " + all;
 	if(count == all) {
 		this.style.background = "#61AA94";
+	} if(count > all) {
+		this.style.background = "#EC879D";
 	}
 }
 
